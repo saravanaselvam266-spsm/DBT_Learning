@@ -23,6 +23,9 @@ models:
                   - placed
                   - return_pending
                   - returned
+                  - cancelled
+
+
       - name: customer_id
         data_tests:
           - relationships:
