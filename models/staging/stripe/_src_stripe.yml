@@ -5,12 +5,12 @@ sources:
     database: raw
     tables:
       - name: payment
-        config: 
+        config:
           loaded_at_field: _batched_at
           freshness:
             warn_after:
-              count: 12
-              period: hour
+              count: 17
+              period: day
             error_after:
-              count: 24
-              period: hour
+              count: 18
+              period: day
