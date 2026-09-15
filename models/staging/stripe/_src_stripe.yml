@@ -3,6 +3,7 @@ version: 2
 sources:
   - name: stripe
     database: raw
+    schema: stripe
     tables:
       - name: payment
         config:
@@ -12,5 +13,5 @@ sources:
               count: 21
               period: day
             error_after:
-              count: 22
+              count: 28
               period: day
