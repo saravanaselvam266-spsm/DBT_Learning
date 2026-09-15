@@ -1,8 +1,7 @@
-with 
+with source as (
 
-source as (
-
-    select * from {{ source('jaffle_shop', 'customers') }}
+    select * 
+    from {{ source('jaffle_shop', 'customers') }}
 
 ),
 
@@ -17,4 +16,5 @@ renamed as (
 
 )
 
-select * from renamed
+select * 
+from renamed

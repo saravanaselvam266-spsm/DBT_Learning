@@ -1,15 +1,14 @@
-with 
+with source as (
 
-source as (
-
-    select * from {{ source('jaffle_shop', 'orders') }}
+    select *
+    from {{ source('jaffle_shop', 'orders') }}
 
 ),
 
 renamed as (
 
     select
-        id as order_id, 
+        id as order_id,
         user_id as customer_id,
         order_date,
         status as order_status,
@@ -19,4 +18,5 @@ renamed as (
 
 )
 
-select * from renamed
+select *
+from renamed
