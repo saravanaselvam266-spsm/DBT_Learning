@@ -9,8 +9,8 @@ sources:
           loaded_at_field: _batched_at
           freshness:
             warn_after:
-              count: 17
+              count: 21
               period: day
             error_after:
-              count: 18
+              count: 22
               period: day
