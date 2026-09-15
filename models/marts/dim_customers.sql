@@ -1,3 +1,5 @@
+{{ config(enabled=false) }}
+
 with customers as (
 
     select *
